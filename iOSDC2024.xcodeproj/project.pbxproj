@@ -66,7 +66,7 @@
 			children = (
 				A15F168B2C6E4FEC00AEF3CB /* AsyncImage */,
 				A15F168A2C6E4FE900AEF3CB /* TextKit */,
-				A15F16832C6E49C700AEF3CB /* AutoLayoutProblem */,
+				A15F16832C6E49C700AEF3CB /* AutoLayout */,
 				A10C15422C6E4144001A9845 /* AppDelegate.swift */,
 				A10C154B2C6E4145001A9845 /* Assets.xcassets */,
 				A10C154D2C6E4145001A9845 /* LaunchScreen.storyboard */,
@@ -76,14 +76,14 @@
 			path = iOSDC2024;
 			sourceTree = "<group>";
 		};
-		A15F16832C6E49C700AEF3CB /* AutoLayoutProblem */ = {
+		A15F16832C6E49C700AEF3CB /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
 				A10C15462C6E4144001A9845 /* AutoLayoutProblemViewController.swift */,
 				A15F16842C6E49DA00AEF3CB /* MessageCell.swift */,
 				A15F16852C6E49DA00AEF3CB /* MessageCell.xib */,
 			);
-			path = AutoLayoutProblem;
+			path = AutoLayout;
 			sourceTree = "<group>";
 		};
 		A15F168A2C6E4FE900AEF3CB /* TextKit */ = {
