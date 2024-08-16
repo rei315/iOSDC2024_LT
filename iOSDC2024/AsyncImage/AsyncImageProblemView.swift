@@ -58,8 +58,8 @@ struct ReloadAsyncImageView: View {
             case .success(let image):
                 image.resizable()
             case .empty:
-                Text("empty")
-            case .failure(let error):
+                ProgressView()
+            case .failure(_):
                 ReloadAsyncImageView(imageURL: imageURL)
             @unknown default:
                 ProgressView()
