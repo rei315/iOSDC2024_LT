@@ -25,6 +25,8 @@
 		A15F16D02C6F654A00AEF3CB /* TextKit2Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C92C6F654A00AEF3CB /* TextKit2Attachment.swift */; };
 		A15F16D12C6F654A00AEF3CB /* TextKit2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16CA2C6F654A00AEF3CB /* TextKit2Cell.swift */; };
 		A15F16D42C6F674E00AEF3CB /* DAWNText2 in Frameworks */ = {isa = PBXBuildFile; productRef = A15F16D32C6F674E00AEF3CB /* DAWNText2 */; };
+		A15F16D62C6F767900AEF3CB /* AutoLayoutProblemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16D52C6F767900AEF3CB /* AutoLayoutProblemData.swift */; };
+		A15F16D82C6F770C00AEF3CB /* AsyncImageProblemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16D72C6F770C00AEF3CB /* AsyncImageProblemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		A15F16C82C6F654A00AEF3CB /* CustomAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAttachment.swift; sourceTree = "<group>"; };
 		A15F16C92C6F654A00AEF3CB /* TextKit2Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit2Attachment.swift; sourceTree = "<group>"; };
 		A15F16CA2C6F654A00AEF3CB /* TextKit2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit2Cell.swift; sourceTree = "<group>"; };
+		A15F16D52C6F767900AEF3CB /* AutoLayoutProblemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutProblemData.swift; sourceTree = "<group>"; };
+		A15F16D72C6F770C00AEF3CB /* AsyncImageProblemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProblemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				A10C15462C6E4144001A9845 /* AutoLayoutProblemViewController.swift */,
 				A15F16842C6E49DA00AEF3CB /* MessageCell.swift */,
 				A15F16852C6E49DA00AEF3CB /* MessageCell.xib */,
+				A15F16D52C6F767900AEF3CB /* AutoLayoutProblemData.swift */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				A15F168E2C6E501800AEF3CB /* AsyncImageProblemViewController.swift */,
 				A15F16902C6E507000AEF3CB /* AsyncImageProblemView.swift */,
+				A15F16D72C6F770C00AEF3CB /* AsyncImageProblemData.swift */,
 			);
 			path = AsyncImage;
 			sourceTree = "<group>";
@@ -221,10 +227,12 @@
 			files = (
 				A15F16D02C6F654A00AEF3CB /* TextKit2Attachment.swift in Sources */,
 				A15F16C32C6F654300AEF3CB /* BadgeView.swift in Sources */,
+				A15F16D82C6F770C00AEF3CB /* AsyncImageProblemData.swift in Sources */,
 				A15F16CF2C6F654A00AEF3CB /* CustomAttachment.swift in Sources */,
 				A15F16CE2C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift in Sources */,
 				A10C15472C6E4144001A9845 /* AutoLayoutProblemViewController.swift in Sources */,
 				A10C15432C6E4144001A9845 /* AppDelegate.swift in Sources */,
+				A15F16D62C6F767900AEF3CB /* AutoLayoutProblemData.swift in Sources */,
 				A15F16862C6E49DA00AEF3CB /* MessageCell.swift in Sources */,
 				A15F168F2C6E501800AEF3CB /* AsyncImageProblemViewController.swift in Sources */,
 				A15F16CD2C6F654A00AEF3CB /* TextKit1Cell.swift in Sources */,

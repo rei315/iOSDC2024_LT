@@ -44,21 +44,21 @@ final class MessageCell: UITableViewCell {
         reactionsView.isHidden = !hasReactions
         if hasReactions {
             /// Wrong Pattern
-//            NSLayoutConstraint.deactivate([balloonViewBottomWithoutReactionsConstraint])
-//            NSLayoutConstraint.activate([balloonViewBottomWithReactionsConstraint])
+            NSLayoutConstraint.deactivate([balloonViewBottomWithoutReactionsConstraint])
+            NSLayoutConstraint.activate([balloonViewBottomWithReactionsConstraint])
             
             /// Correct Pattern
-            balloonViewBottomWithoutReactionsConstraint.priority = .defaultLow
-            balloonViewBottomWithReactionsConstraint.priority = .defaultHigh
+//            balloonViewBottomWithoutReactionsConstraint.priority = .defaultLow
+//            balloonViewBottomWithReactionsConstraint.priority = .defaultHigh
             
         } else {
             /// Wrong Pattern
-//            NSLayoutConstraint.deactivate([balloonViewBottomWithReactionsConstraint])
-//            NSLayoutConstraint.activate([balloonViewBottomWithoutReactionsConstraint])
+            NSLayoutConstraint.deactivate([balloonViewBottomWithReactionsConstraint])
+            NSLayoutConstraint.activate([balloonViewBottomWithoutReactionsConstraint])
             
             /// Correct Pattern
-            balloonViewBottomWithReactionsConstraint.priority = .defaultLow
-            balloonViewBottomWithoutReactionsConstraint.priority = .defaultHigh
+//            balloonViewBottomWithReactionsConstraint.priority = .defaultLow
+//            balloonViewBottomWithoutReactionsConstraint.priority = .defaultHigh
             
         }
     }

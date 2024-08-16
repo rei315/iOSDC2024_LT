@@ -1,23 +1,6 @@
 import UIKit
 
 class AutoLayoutProblemViewController: UIViewController {
-    let items: [String] = [
-        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-        "cccccccccccccccccc",
-        "ddddddddddddddddddddddddddddddddddddddddddddd",
-        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "ffffffffffff",
-        "ggggggggggggggggggggggggg",
-        "hhhh",
-        "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
-        "jjjjjjjjjjjjjjjjjjjjjjjjjjj",
-        "kkkkkkkkkkkkk",
-        "llllllllllllllllllllllllllllllllllll",
-        "mmmmmmmmmmmmmmm",
-        "nnnnnnn",
-    ]
-    
     let tableView = UITableView()
     
     override func viewDidLoad() {
@@ -38,7 +21,7 @@ class AutoLayoutProblemViewController: UIViewController {
 
 extension AutoLayoutProblemViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        items.count
+        autoLayoutProblemData.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,7 +30,7 @@ extension AutoLayoutProblemViewController: UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCellIdentifier", for: indexPath) as! MessageCell
-        let item = items[indexPath.item]
+        let item = autoLayoutProblemData[indexPath.item]
         cell.configure(text: item, hasReactions: indexPath.item % 2 == 0)
         return cell
     }
