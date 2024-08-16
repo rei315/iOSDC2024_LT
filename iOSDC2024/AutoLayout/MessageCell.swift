@@ -26,10 +26,10 @@ final class MessageCell: UITableViewCell {
         
         messageLabel.numberOfLines = 0
         messageLabel.font = .systemFont(ofSize: 14)
-        messageLabel.textColor = .white
+        messageLabel.textColor = .black
         
         timeLabel.font = .systemFont(ofSize: 11)
-        timeLabel.textColor = .white
+        timeLabel.textColor = .black
         timeLabel.text = getTime()
         
         reactionsView.backgroundColor = .red
