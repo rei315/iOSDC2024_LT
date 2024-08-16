@@ -17,6 +17,14 @@
 		A15F168D2C6E500100AEF3CB /* TextKitProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F168C2C6E500100AEF3CB /* TextKitProblemViewController.swift */; };
 		A15F168F2C6E501800AEF3CB /* AsyncImageProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F168E2C6E501800AEF3CB /* AsyncImageProblemViewController.swift */; };
 		A15F16912C6E507000AEF3CB /* AsyncImageProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16902C6E507000AEF3CB /* AsyncImageProblemView.swift */; };
+		A15F16C32C6F654300AEF3CB /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C22C6F654300AEF3CB /* BadgeView.swift */; };
+		A15F16CC2C6F654A00AEF3CB /* TextKit1Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C42C6F654A00AEF3CB /* TextKit1Attachment.swift */; };
+		A15F16CD2C6F654A00AEF3CB /* TextKit1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C52C6F654A00AEF3CB /* TextKit1Cell.swift */; };
+		A15F16CE2C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C62C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift */; };
+		A15F16CF2C6F654A00AEF3CB /* CustomAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C82C6F654A00AEF3CB /* CustomAttachment.swift */; };
+		A15F16D02C6F654A00AEF3CB /* TextKit2Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16C92C6F654A00AEF3CB /* TextKit2Attachment.swift */; };
+		A15F16D12C6F654A00AEF3CB /* TextKit2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F16CA2C6F654A00AEF3CB /* TextKit2Cell.swift */; };
+		A15F16D42C6F674E00AEF3CB /* DAWNText2 in Frameworks */ = {isa = PBXBuildFile; productRef = A15F16D32C6F674E00AEF3CB /* DAWNText2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,13 @@
 		A15F168C2C6E500100AEF3CB /* TextKitProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextKitProblemViewController.swift; sourceTree = "<group>"; };
 		A15F168E2C6E501800AEF3CB /* AsyncImageProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProblemViewController.swift; sourceTree = "<group>"; };
 		A15F16902C6E507000AEF3CB /* AsyncImageProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageProblemView.swift; sourceTree = "<group>"; };
+		A15F16C22C6F654300AEF3CB /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		A15F16C42C6F654A00AEF3CB /* TextKit1Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit1Attachment.swift; sourceTree = "<group>"; };
+		A15F16C52C6F654A00AEF3CB /* TextKit1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit1Cell.swift; sourceTree = "<group>"; };
+		A15F16C62C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit1CommentBodyLabel.swift; sourceTree = "<group>"; };
+		A15F16C82C6F654A00AEF3CB /* CustomAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAttachment.swift; sourceTree = "<group>"; };
+		A15F16C92C6F654A00AEF3CB /* TextKit2Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit2Attachment.swift; sourceTree = "<group>"; };
+		A15F16CA2C6F654A00AEF3CB /* TextKit2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKit2Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15F16D42C6F674E00AEF3CB /* DAWNText2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +105,9 @@
 		A15F168A2C6E4FE900AEF3CB /* TextKit */ = {
 			isa = PBXGroup;
 			children = (
+				A15F16C72C6F654A00AEF3CB /* TextKit1 */,
+				A15F16CB2C6F654A00AEF3CB /* TextKit2 */,
+				A15F16C22C6F654300AEF3CB /* BadgeView.swift */,
 				A15F168C2C6E500100AEF3CB /* TextKitProblemViewController.swift */,
 			);
 			path = TextKit;
@@ -101,6 +120,26 @@
 				A15F16902C6E507000AEF3CB /* AsyncImageProblemView.swift */,
 			);
 			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		A15F16C72C6F654A00AEF3CB /* TextKit1 */ = {
+			isa = PBXGroup;
+			children = (
+				A15F16C42C6F654A00AEF3CB /* TextKit1Attachment.swift */,
+				A15F16C52C6F654A00AEF3CB /* TextKit1Cell.swift */,
+				A15F16C62C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift */,
+			);
+			path = TextKit1;
+			sourceTree = "<group>";
+		};
+		A15F16CB2C6F654A00AEF3CB /* TextKit2 */ = {
+			isa = PBXGroup;
+			children = (
+				A15F16C82C6F654A00AEF3CB /* CustomAttachment.swift */,
+				A15F16C92C6F654A00AEF3CB /* TextKit2Attachment.swift */,
+				A15F16CA2C6F654A00AEF3CB /* TextKit2Cell.swift */,
+			);
+			path = TextKit2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +158,9 @@
 			dependencies = (
 			);
 			name = iOSDC2024;
+			packageProductDependencies = (
+				A15F16D32C6F674E00AEF3CB /* DAWNText2 */,
+			);
 			productName = iOSDC2024;
 			productReference = A10C153F2C6E4144001A9845 /* iOSDC2024.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +189,9 @@
 				Base,
 			);
 			mainGroup = A10C15362C6E4144001A9845;
+			packageReferences = (
+				A15F16D22C6F674E00AEF3CB /* XCRemoteSwiftPackageReference "DAWNText2" */,
+			);
 			productRefGroup = A10C15402C6E4144001A9845 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,12 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15F16D02C6F654A00AEF3CB /* TextKit2Attachment.swift in Sources */,
+				A15F16C32C6F654300AEF3CB /* BadgeView.swift in Sources */,
+				A15F16CF2C6F654A00AEF3CB /* CustomAttachment.swift in Sources */,
+				A15F16CE2C6F654A00AEF3CB /* TextKit1CommentBodyLabel.swift in Sources */,
 				A10C15472C6E4144001A9845 /* AutoLayoutProblemViewController.swift in Sources */,
 				A10C15432C6E4144001A9845 /* AppDelegate.swift in Sources */,
 				A15F16862C6E49DA00AEF3CB /* MessageCell.swift in Sources */,
 				A15F168F2C6E501800AEF3CB /* AsyncImageProblemViewController.swift in Sources */,
+				A15F16CD2C6F654A00AEF3CB /* TextKit1Cell.swift in Sources */,
+				A15F16CC2C6F654A00AEF3CB /* TextKit1Attachment.swift in Sources */,
 				A15F16892C6E4E4700AEF3CB /* HomeViewController.swift in Sources */,
 				A15F168D2C6E500100AEF3CB /* TextKitProblemViewController.swift in Sources */,
+				A15F16D12C6F654A00AEF3CB /* TextKit2Cell.swift in Sources */,
 				A15F16912C6E507000AEF3CB /* AsyncImageProblemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A15F16D22C6F674E00AEF3CB /* XCRemoteSwiftPackageReference "DAWNText2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/noppefoxwolf/DAWNText2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.23;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A15F16D32C6F674E00AEF3CB /* DAWNText2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A15F16D22C6F674E00AEF3CB /* XCRemoteSwiftPackageReference "DAWNText2" */;
+			productName = DAWNText2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A10C15372C6E4144001A9845 /* Project object */;
 }

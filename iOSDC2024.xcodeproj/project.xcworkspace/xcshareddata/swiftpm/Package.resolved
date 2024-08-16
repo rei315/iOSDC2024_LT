@@ -1,0 +1,15 @@
+{
+  "originHash" : "fe944e7a2d7b22a0710634ee51e4f899332089468526eb4faa790079e93dbdde",
+  "pins" : [
+    {
+      "identity" : "dawntext2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/noppefoxwolf/DAWNText2",
+      "state" : {
+        "revision" : "53e4b5e328367710d594df23002fbeaed39c154f",
+        "version" : "0.0.23"
+      }
+    }
+  ],
+  "version" : 3
+}

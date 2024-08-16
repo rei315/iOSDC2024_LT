@@ -1,10 +1,3 @@
-//
-//  AsyncImageProblemViewController.swift
-//  iOSDC2024
-//
-//  Created by mingukkim on 2024/08/16.
-//
-
 import UIKit
 import SwiftUI
 

@@ -1,10 +1,3 @@
-//
-//  MessageCell.swift
-//  Pokota
-//
-//  Created by Ayumi ISHII on 2021/10/25.
-//
-
 import UIKit
 
 final class MessageCell: UITableViewCell {

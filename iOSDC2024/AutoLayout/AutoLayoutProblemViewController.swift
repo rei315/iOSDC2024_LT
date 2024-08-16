@@ -1,10 +1,3 @@
-//
-//  AutoLayoutProblemViewController.swift
-//  AutoLayoutBug
-//
-//  Created by MINGUK KIM on 2024/08/15.
-//
-
 import UIKit
 
 class AutoLayoutProblemViewController: UIViewController {
