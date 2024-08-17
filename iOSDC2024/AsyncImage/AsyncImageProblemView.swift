@@ -6,16 +6,23 @@ struct AsyncImageProblemView: View {
             LazyVStack(spacing: 12) {
                 ForEach(asyncImageProblem, id: \.self) { url in
                     /// Wrong Pattern
-//                    AsyncImage(url: $0) { result in
-//                        result.resizable()
-//                    } placeholder: {
-//                        ProgressView()
-//                    }
-//                    .frame(width: 200, height: 200)
+                    AsyncImage(url: url) { phase in
+                        switch phase {
+                        case .success(let image):
+                            image.resizable()
+                        case .empty:
+                            ProgressView()
+                        case .failure(let error):
+                            Text(error.localizedDescription)
+                        @unknown default:
+                            ProgressView()
+                        }
+                    }
+                    .frame(width: 200, height: 200)
                     
                     /// Correct Code
-                    ReloadAsyncImageView(imageURL: url)
-                        .frame(width: 200, height: 200)
+//                    ReloadAsyncImageView(imageURL: url)
+//                        .frame(width: 200, height: 200)
                 }
             }
         }
@@ -32,8 +39,12 @@ struct ReloadAsyncImageView: View {
                 image.resizable()
             case .empty:
                 ProgressView()
-            case .failure(_):
-                ReloadAsyncImageView(imageURL: imageURL)
+            case .failure(let error):
+                if error.localizedDescription == "cancelled" {
+                    ReloadAsyncImageView(imageURL: imageURL)
+                } else {
+                    Text(error.localizedDescription)
+                }
             @unknown default:
                 ProgressView()
             }
